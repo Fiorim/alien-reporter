@@ -1,4 +1,14 @@
-  .header {
+  header {
+    width: 500px;
+    margin: 40px auto 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .header-title {
+    color: gray;
+  }
+  .list-header {
     width: 500px;
     margin: 0 auto;
     padding: 20px 30px 20px 17px;

@@ -1,7 +1,19 @@
-{{ alienForm?.formId }}
-{{ alienForm?.lastChangedDate }}
-{{ alienForm?.lastChangedBy }}
-<div class="header">
+
+<header>
+  <section>
+    <span class="header-title">Form ID: </span>
+    <span class="header-value">{{ alienForm?.formId }}</span>
+  </section>
+  <section>
+    <span class="header-title">Last modified on </span>
+    <span class="header-value">{{ alienForm?.lastChangedDate | date:'short'}}</span>
+  </section>
+  <section>
+    <span class="header-title">by: </span>
+    <span class="header-value">{{ alienForm?.lastChangedBy }}</span>
+  </section>
+</header>
+<div class="list-header">
   <span class="question-id">ID</span>
   <span class="question-caption">CAPTION</span>
   <span class="question-type">TYPE</span>
