@@ -5,9 +5,11 @@
     justify-content: space-between;
     font-size: 12px;
   }
+
   .header-title {
     color: gray;
   }
+  
   .list-header {
     width: 500px;
     margin: 0 auto;

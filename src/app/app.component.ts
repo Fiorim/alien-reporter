@@ -13,7 +13,6 @@ export class AppComponent implements OnInit {
 
   alienForm: AlienForm;
 
-
   constructor(private alienFormService: ReportFormService) { }
 
   ngOnInit() {
