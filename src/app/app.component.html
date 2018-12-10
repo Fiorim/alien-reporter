@@ -1,10 +1,17 @@
 {{ alienForm?.formId }}
 {{ alienForm?.lastChangedDate }}
 {{ alienForm?.lastChangedBy }}
-
-<div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
-  <div class="example-box" *ngFor="let movie of movies" cdkDrag>
-    <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
-    {{movie}}
+<div class="header">
+  <span class="question-id">ID</span>
+  <span class="question-caption">CAPTION</span>
+  <span class="question-type">TYPE</span>
+</div>
+<div cdkDropList class="question-list" (cdkDropListDropped)="drop($event)">
+  <div class="question-box" *ngFor="let question of alienForm?.form" cdkDrag>
+    <div class="question-custom-placeholder" *cdkDragPlaceholder></div>
+    <span class="question-id">{{question.id}}</span>
+    <span class="question-caption">{{question.caption}}</span>
+    <span class="question-type">{{question.type}}</span>
+    <img class="sort-icon"src="https://img.icons8.com/windows/50/000000/sort.png">
   </div>
 </div>
